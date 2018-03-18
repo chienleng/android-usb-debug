@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Form</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Label</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-range [(ngModel)]="brightness">
+        <ion-icon range-left small name="sunny"></ion-icon>
+        <ion-icon range-right name="sunny"></ion-icon>
+      </ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-label>Select</ion-label>
+      <ion-select [(ngModel)]="selectoptionsModel">
+        <ion-option value="1">option1</ion-option>
+        <ion-option value="2">option2</ion-option>
+        <ion-option value="3">option3</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Textarea</ion-label>
+      <ion-textarea placeholder="Enter a description"></ion-textarea>
+    </ion-item>
+    <button ion-button>A button</button>
+
+  </ion-list>
+</ion-content>
